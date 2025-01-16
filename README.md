@@ -29,35 +29,17 @@
 
 ## Endpoints
 
-### Authentication
+- **POST /api/users**
 
-- **POST /api/auth/register**
-
-  - Registers a new user.
+  - Creates a new user.
   - Request body:
     ```json
     {
       "username": "string",
-      "email": "string",
-      "password": "string"
+      "age": "number",
+      "hobbies": "array"
     }
     ```
-
-- **POST /api/auth/login**
-  - Logs in a user.
-  - Request body:
-    ```json
-    {
-      "email": "string",
-      "password": "string"
-    }
-    ```
-
-### Users
-
-- **GET /api/users**
-
-  - Retrieves a list of users.
 
 - **GET /api/users/:id**
 
@@ -70,7 +52,8 @@
     ```json
     {
       "username": "string",
-      "email": "string"
+      "age": "number",
+      "hobbies": "array"
     }
     ```
 
